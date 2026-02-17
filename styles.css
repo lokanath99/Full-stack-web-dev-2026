@@ -1,0 +1,27 @@
+/* h2,
+p,
+a {
+    color: rgb(255, 133, 133);
+} */
+/* 
+#heading2,
+.list {
+    color: rgb(255, 133, 133);
+    list-style-type: georgian;
+} */
+
+/* 
+
+#heading1 {
+    color: rgb(133, 198, 255);
+}
+
+.list {
+    list-style: georgian;
+} */
+
+ol li {
+    /* color: hsl(0, 100%, 50%); */
+    color: hex(#76c447);
+    /* text-decoration: underline; */
+}
