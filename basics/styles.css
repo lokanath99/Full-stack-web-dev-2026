@@ -53,11 +53,11 @@ button:active{
 }
 
 
-p::first-letter {
+/* p::first-letter {
     font: bolder;
     font-family: cursive;
     font-size: larger;
-}
+} */
 
 @keyframes anim1 {
     from {background-color: red;}
@@ -80,4 +80,48 @@ h2{
     animation-duration: 5s;
     animation-iteration-count: 100;
     animation-delay: 100ms;
+}
+
+.breakpoint {
+    font-size: 2rem;
+    font-weight: bold;
+    margin:20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightcoral;
+    }
+    .breakpoint::after {
+        content: "Small Screen (Phone)";
+    }
+}
+
+@media (max-width: 600px) and (max-width: 900px){
+    body {
+        background-color: lightblue;
+    }
+    .breakpoint::after {
+        content: "Medium Screen (tablet)"
+    }
+}
+
+@media (max-width: 900px) and (max-width: 1200px){
+    body {
+        background-color: rgb(208, 236, 172);
+    }
+    .breakpoint::after {
+        content: "large Screen (desktop)"
+    }
+}
+
+
+/* Extra large devices (large desktops, more than 1200px) */
+@media (min-width: 1200px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+    .breakpoint::after {
+        content: "Extra Large Screen (Large Desktop)";
+    }
 }
